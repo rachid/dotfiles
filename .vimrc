@@ -215,8 +215,8 @@ augroup END
 augroup Rspec
   au!
   autocmd BufNewFile,BufReadPost,BufEnter *_spec.rb
-    \ :nmap <leader>r :call Send_to_Tmux("clear\nrspec " . expand("%") . "\n")<CR>|
-    \ :nmap <leader>R :call Send_to_Tmux("clear\nrspec " . expand("%") . "\:<C-R>=line(".")<CR>\n")<CR>|
+    \ :nmap <leader>r :call Send_to_Tmux("clear\nbin/rspec " . expand("%") . "\n")<CR>|
+    \ :nmap <leader>R :call Send_to_Tmux("clear\nbin/rspec " . expand("%") . "\:<C-R>=line(".")<CR>\n")<CR>|
     \ :nmap <leader>m :call Send_to_Tmux("clear\nmspec " . expand("%") . "\n")<CR>|
     \ :nmap <leader>M :call Send_to_Tmux("clear\nmspec " . expand("%") . "\:<C-R>=line(".")<CR>\n")<CR>|
     \ :nmap <leader>y :call Send_to_Tmux("clear\nbin/rspec " . expand("%") . "\n")<CR>|
